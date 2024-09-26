@@ -1,0 +1,51 @@
+.profile-container {
+  position: relative;
+  padding: 10px;
+}
+
+.name {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 25px;
+  margin-bottom: 4px;
+}
+
+.contact-info {
+  display: flex; /* Use flexbox for better alignment */
+  align-items: center; /* Center vertically */
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+}
+
+.contact-info span {
+  color: rgb(110, 110, 110);
+}
+
+.divider {
+  margin: 0 8px; /* Space around the divider */
+}
+
+.email {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  color: rgb(110, 110, 110);
+  margin-top: 4px; /* Add space above the email */
+}
+
+.profile-edit {
+  position: absolute; /* Position the edit button absolutely */
+  top: 10px; /* Align to the top of the container */
+  right: 10px; /* Align to the right of the container */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition */
+}
+
+.profile-container:hover {
+  background-color: #f8f7fa; /* Change background color on hover */
+}
+
+.profile-container:hover .profile-edit {
+  opacity: 1; /* Show the edit button on hover */
+}

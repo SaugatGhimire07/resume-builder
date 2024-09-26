@@ -1,0 +1,10 @@
+.resume-container {
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.125rem 0 rgba(0, 0, 0, 0.1);
+  min-height: 59.375rem;
+  padding: 3rem 3.2rem;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+}

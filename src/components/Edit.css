@@ -1,0 +1,32 @@
+.edit-btn {
+  position: relative;
+  border: none;
+  background-color: white;
+  box-shadow: 0 0 2px 0 rgba(45, 45, 45, 0.2),
+    0 4px 8px 0 rgba(45, 45, 45, 0.12), 0 8px 16px 0 rgba(45, 45, 45, 0.08);
+  padding: 8px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-btn::before {
+  content: "Edit";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  margin-bottom: 5px; /* Adds space between the button and the text */
+}
+
+.edit-btn:hover::before {
+  opacity: 1;
+}
